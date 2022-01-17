@@ -13,8 +13,6 @@ import static com.proto.util.TestDataReader.*;
 
 public class HomePage extends BaseTest {
 
-    WebDriver driver;
-
     String username = getUsername();
     String email = getEmail();
     String password = getPassword();
@@ -22,7 +20,6 @@ public class HomePage extends BaseTest {
 
 
     public HomePage(WebDriver driver) throws IOException {
-        this.driver = driver;
         PageFactory.initElements(driver, this);
 
     }

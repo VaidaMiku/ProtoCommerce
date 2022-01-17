@@ -17,9 +17,6 @@ public class TestDataReader {
         return getTestData().getProperty("baseUrl");
     }
 
-    public static String getNode() throws IOException {
-        return getTestData().getProperty("nodeUrl");
-    }
 
     public static String getBrowser() throws IOException {
         return getTestData().getProperty("browser");

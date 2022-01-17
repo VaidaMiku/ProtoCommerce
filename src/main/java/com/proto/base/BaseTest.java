@@ -25,13 +25,15 @@ public class BaseTest {
 
         String browser = getBrowser();
         String baseUrl = getUrl();
-        String nodeUrl = getNode();
+        //String nodeUrl = getNode();
 
 
         dc = new DesiredCapabilities();
         dc.setPlatform(Platform.WINDOWS);
         dc.setBrowserName(browser);
-        driver = new RemoteWebDriver(new URL(nodeUrl), dc);
+        //driver = new RemoteWebDriver(new URL(nodeUrl), dc);
+        System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+        driver = new ChromeDriver();
         driver.get(baseUrl);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
