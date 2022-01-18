@@ -18,7 +18,7 @@ public class BaseTest {
 
     public WebDriver driver;
 
-    DesiredCapabilities dc;
+    //DesiredCapabilities dc;
 
     @BeforeTest
     public void setUp() throws IOException {
@@ -29,14 +29,14 @@ public class BaseTest {
         options.addArguments("--headless");
         driver = new ChromeDriver(options);
 
-        String browser = getBrowser();
+        //String browser = getBrowser();
         String baseUrl = getUrl();
         //String nodeUrl = getNode();
 
 
-        dc = new DesiredCapabilities();
-        dc.setPlatform(Platform.WINDOWS);
-        dc.setBrowserName(browser);
+        //dc = new DesiredCapabilities();
+        //dc.setPlatform(Platform.WINDOWS);
+        //dc.setBrowserName(browser);
         //driver = new RemoteWebDriver(new URL(nodeUrl), dc);
         //System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
         driver = new ChromeDriver();
