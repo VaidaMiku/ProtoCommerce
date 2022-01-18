@@ -39,7 +39,7 @@ public class BaseTest {
         //dc.setBrowserName(browser);
         //driver = new RemoteWebDriver(new URL(nodeUrl), dc);
         //System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
         driver.get(baseUrl);
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         driver.manage().window().maximize();
