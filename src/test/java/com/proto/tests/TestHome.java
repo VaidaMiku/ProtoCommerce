@@ -19,6 +19,7 @@ public class TestHome extends BaseTest {
         Assert.assertEquals(homePage.successfulSignUpAlert(), "×\n" +
                 "Success! The Form has been submitted successfully!.", "Test failed");
         System.out.println(homePage.successfulSignUpAlert());
+        System.out.println("Hello");
 
     }
 
