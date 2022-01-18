@@ -7,7 +7,7 @@ import java.util.Properties;
 public class TestDataReader {
 
     public static Properties getTestData() throws IOException {
-        FileInputStream fp = new FileInputStream("src\\main\\resources\\testdata.properties");
+        FileInputStream fp = new FileInputStream("/testdata.properties");
         Properties properties = new Properties();
         properties.load(fp);
         return properties;
